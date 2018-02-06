@@ -28,7 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         // Binding an Event Listener to the address form submission
-        document.getElementById('searchAddress').addEventListener('submit', searchAddress, false);
+        document.getElementById('searchAddress').addEventListener('click', searchAddress, false);
 
         this.receivedEvent('deviceready');
     },
@@ -48,7 +48,33 @@ var app = {
 
 // Function for searching for address
 function searchAddress(event) {
-    alert(document.getElementById('address').value);
+    // Get the value in the submitted form field (the entered address)
+    // Replace spaces with pluses (what Google wants)
+    var address = document.getElementById('address').value.split(' ').join('+');
+
+    // Make a request to the Google Geocode API
+    var response = JSON.parse(Http.get('https://maps.googleapis.com/maps/api/geocode/json?address='+address+'&key=AIzaSyCVYauFMf2WENMc2WRYxRpco4luGzmfmII'));
+
+    // Parse the data for the longitude and latitude
+    var longitude = response.results[0].geometry.location.lng;
+    var latitude = response.results[0].geometry.location.lat
+
+    // Now display it on the app screen.
+    var lat_long_div = document.getElementById('lat_long_div');
+    lat_long_div.innerHTML = '<div class="card"><div class="card-body">'+
+    '<strong>Longitude:</strong> '+longitude+'<br/>'+
+    '<strong>Latitude:</strong> '+latitude+
+    '</div></div>'
+}
+
+// HTTP Client functions for contacting the API
+class Http {
+    static get(url) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", url, false); // false for synchronous request
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+    }
 }
 
 app.initialize();
