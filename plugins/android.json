@@ -7,6 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-googlemaps": {
+      "API_KEY_FOR_ANDROID": "AIzaSyCVYauFMf2WENMc2WRYxRpco4luGzmfmII",
+      "PLAY_SERVICES_VERSION": "11.8.0",
+      "PACKAGE_NAME": "com.markbarrettdesign.mapapp"
+    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.markbarrettdesign.mapapp"
     }

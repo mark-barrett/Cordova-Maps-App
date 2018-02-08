@@ -1,13 +1,30 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [:tbxml-android:] /private/var/root/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/cfeaa009173e9a1997a89ef3f64e0023/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/4a85a24d3739f5f830fb3d8582428923/AndroidManifest.xml:2:1-9:12
 MERGED from [:CordovaLib] /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6748d35617e4259b7004946c09fb1d5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/b556e54ce11fbf7d3f0ebe82384a1be2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/cab2622a1c44e7ab9b08e6175d165721/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/38386b13b79bc1d23b644c9bee0cdb7b/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:support-v4:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/3c056134d8aa5144542745c80c614c63/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/fe2fddb0e7c544e9b7f4d86f4004cd81/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/fbed40d4fb025ed4830aad7e9370da05/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:support-fragment:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/31d7f802aa58a0c5b8077c948fe266b3/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/9f59053adecb67ea2f24309697ad2572/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bf1ae99b84c777278c3f86242f34d929/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/9b38b5a62beb82a502f21a4888f3fc2e/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/1d80c8f3f6e59eb547b3d8421fa95b5e/AndroidManifest.xml:17:1-27:12
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:102-140
 		INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml
@@ -40,10 +57,44 @@ ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Interne
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
 ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:5:5-12:19
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:5:5-14:19
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/4a85a24d3739f5f830fb3d8582428923/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/4a85a24d3739f5f830fb3d8582428923/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6748d35617e4259b7004946c09fb1d5/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6748d35617e4259b7004946c09fb1d5/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/b556e54ce11fbf7d3f0ebe82384a1be2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/b556e54ce11fbf7d3f0ebe82384a1be2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/cab2622a1c44e7ab9b08e6175d165721/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/cab2622a1c44e7ab9b08e6175d165721/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/38386b13b79bc1d23b644c9bee0cdb7b/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/38386b13b79bc1d23b644c9bee0cdb7b/AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/3c056134d8aa5144542745c80c614c63/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/3c056134d8aa5144542745c80c614c63/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/fe2fddb0e7c544e9b7f4d86f4004cd81/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/fe2fddb0e7c544e9b7f4d86f4004cd81/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/fbed40d4fb025ed4830aad7e9370da05/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/fbed40d4fb025ed4830aad7e9370da05/AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/31d7f802aa58a0c5b8077c948fe266b3/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/31d7f802aa58a0c5b8077c948fe266b3/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/9f59053adecb67ea2f24309697ad2572/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/9f59053adecb67ea2f24309697ad2572/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bf1ae99b84c777278c3f86242f34d929/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bf1ae99b84c777278c3f86242f34d929/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/9b38b5a62beb82a502f21a4888f3fc2e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/9b38b5a62beb82a502f21a4888f3fc2e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/1d80c8f3f6e59eb547b3d8421fa95b5e/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/1d80c8f3f6e59eb547b3d8421fa95b5e/AndroidManifest.xml:25:5-20
 	android:supportsRtl
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
@@ -78,11 +129,109 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
 	android:name
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:12:9-124
+	android:value
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:12:66-121
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:12:20-65
+meta-data#com.google.android.gms.version
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:13:9-122
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:13:66-119
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:13:20-65
 uses-sdk
-ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:13:5-74
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
+MERGED from [:tbxml-android:] /private/var/root/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/cfeaa009173e9a1997a89ef3f64e0023/AndroidManifest.xml:7:5-43
+MERGED from [:tbxml-android:] /private/var/root/.gradle/caches/transforms-1/files-1.1/tbxml-android.aar/cfeaa009173e9a1997a89ef3f64e0023/AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/4a85a24d3739f5f830fb3d8582428923/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/4a85a24d3739f5f830fb3d8582428923/AndroidManifest.xml:5:5-44
 MERGED from [:CordovaLib] /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6748d35617e4259b7004946c09fb1d5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/a6748d35617e4259b7004946c09fb1d5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/59560c1419db2542f546ce534a318566/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/b556e54ce11fbf7d3f0ebe82384a1be2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/b556e54ce11fbf7d3f0ebe82384a1be2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/cab2622a1c44e7ab9b08e6175d165721/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/cab2622a1c44e7ab9b08e6175d165721/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/38386b13b79bc1d23b644c9bee0cdb7b/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/38386b13b79bc1d23b644c9bee0cdb7b/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/3c056134d8aa5144542745c80c614c63/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/3c056134d8aa5144542745c80c614c63/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/fe2fddb0e7c544e9b7f4d86f4004cd81/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/fe2fddb0e7c544e9b7f4d86f4004cd81/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/fbed40d4fb025ed4830aad7e9370da05/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/fbed40d4fb025ed4830aad7e9370da05/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:support-fragment:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/31d7f802aa58a0c5b8077c948fe266b3/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/31d7f802aa58a0c5b8077c948fe266b3/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/9f59053adecb67ea2f24309697ad2572/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/9f59053adecb67ea2f24309697ad2572/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bf1ae99b84c777278c3f86242f34d929/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bf1ae99b84c777278c3f86242f34d929/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/9b38b5a62beb82a502f21a4888f3fc2e/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/9b38b5a62beb82a502f21a4888f3fc2e/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/1d80c8f3f6e59eb547b3d8421fa95b5e/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/1d80c8f3f6e59eb547b3d8421fa95b5e/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/3c056134d8aa5144542745c80c614c63/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:13:42-71
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:15:42-71
+		INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:13:15-41
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:15:15-41
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:16:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:16:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:18:22-76
+uses-feature#0x00020000
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/fff926300e2f8b3d533c9a7e2c0ea27c/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:19:19-51
+	android:required
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:19:52-75
+uses-feature#android.hardware.location
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:20:5-62
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:20:19-59
+uses-feature#android.hardware.location.gps
+ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:21:19-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12 reason: za.co.twyst has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12 reason: za.co.twyst has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/map-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12 reason: za.co.twyst requested WRITE_EXTERNAL_STORAGE
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/c3bde15154c626805f818ee4877ef7dc/AndroidManifest.xml:24:13-79

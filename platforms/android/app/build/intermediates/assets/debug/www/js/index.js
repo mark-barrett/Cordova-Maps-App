@@ -30,6 +30,16 @@ var app = {
         // Binding an Event Listener to the address form submission
         document.getElementById('searchAddress').addEventListener('click', searchAddress, false);
 
+        alert('we in on device ready');
+
+        var div = document.getElementById("map_canvas1");
+
+        var map = plugin.google.maps.Map.getMap(div);
+
+        map.addEventListener(plugin.google.maps.event.MAP_READY, function onMapInit(map) {
+          alert('hello world');
+        });
+
         this.receivedEvent('deviceready');
     },
 
@@ -45,6 +55,10 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function onMapInit(map) {
+    alert('hello world');
+}
 
 // Function for searching for address
 function searchAddress(event) {

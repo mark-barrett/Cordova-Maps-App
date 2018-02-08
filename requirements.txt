@@ -1,4 +1,4 @@
-1. Allow the user to enter an address and the app returns a latitude and longitude of the address. (5p)
+1. Allow the user to enter an address and the app returns a latitude and longitude of the address. (5p) Complete
 2. This address/longitude and latitude is then placed on a map shown to the user. (5p)
 --
 3. Location information of the phone shows the longitude and latitude. (5p)
