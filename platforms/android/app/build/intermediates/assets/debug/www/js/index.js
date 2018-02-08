@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+var map;
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -34,7 +37,7 @@ var app = {
 
         var div = document.getElementById("map_canvas1");
 
-        var map = plugin.google.maps.Map.getMap(div);
+        map = plugin.google.maps.Map.getMap(div);
 
         map.addEventListener(plugin.google.maps.event.MAP_READY, function onMapInit(map) {
           alert('hello world');
@@ -56,10 +59,6 @@ var app = {
     }
 };
 
-function onMapInit(map) {
-    alert('hello world');
-}
-
 // Function for searching for address
 function searchAddress(event) {
     // Get the value in the submitted form field (the entered address)
@@ -79,6 +78,27 @@ function searchAddress(event) {
     '<strong>Longitude:</strong> '+longitude+'<br/>'+
     '<strong>Latitude:</strong> '+latitude+
     '</div></div>'
+
+    var responseShortAddress = response.results[0].address_components[0].short_name;
+
+    map.addMarker({
+        'position': {"lat": latitude, "lng": longitude},
+        'title': [responseShortAddress].join("\n"),
+        'snippet': "Lat:"+latitude+" Long:"+latitude
+    }, function(marker) {
+        marker.showInfoWindow();
+
+        var LOCATION = {"lat": latitude, "lng": longitude};
+
+        map.moveCamera({
+          'target': LOCATION,
+          'tilt': 0,
+          'zoom': 18,
+          'bearing': 140
+        }, function() {
+          console.log("Camera position changed.");
+        });
+    });
 }
 
 // HTTP Client functions for contacting the API
