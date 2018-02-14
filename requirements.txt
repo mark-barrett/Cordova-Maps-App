@@ -7,7 +7,7 @@
 5. Get the distance between two points. (10p) Complete
 6. Get directions between two markers. (10p)
 --
-7. User can put a marker in a location and information about that location. (10p)  --> Here is a grade 5
+7. User can put a marker in a location and information about that location. (10p) Complete --> Here is a grade 5
 8. Add images about a location. (10p)
 --
 9. Views others information from the database (20p)

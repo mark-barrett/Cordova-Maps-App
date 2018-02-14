@@ -88,9 +88,6 @@ var app = {
                         // Remove the marker
                         marker.remove();
                     });
-
-                    console.log(distanceBetweenArray);
-                    alert(distanceBetweenArray);
                 });
             });
 
@@ -219,6 +216,13 @@ function getDistance(event) {
         distance_div.innerHTML = '<div class="card"><div class="card-body">'+
         'Distance: '+distance+' meters'+
         '</div></div>'
+
+        map.addPolyline({
+            'points': distanceBetweenArray,
+            'color': '#1EB4FA',
+            'width': 10,
+            'geodesic': true
+        });
     }
 }
 
