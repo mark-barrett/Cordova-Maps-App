@@ -47,8 +47,8 @@ var app = {
 
         map.addEventListener(plugin.google.maps.event.MAP_READY, function onMapInit(map) {
 
-            // Event listener for touching the map to add markers
-            map.addEventListener(plugin.google.maps.event.MAP_LONG_CLICK, function mapClicked(latLng) {
+            // Event listener for touching the map to add markers for distance between
+            map.addEventListener(plugin.google.maps.event.MAP_CLICK, function mapClicked(latLng) {
                 
                 var markersIndex = 0;
 
@@ -92,6 +92,31 @@ var app = {
                     console.log(distanceBetweenArray);
                     alert(distanceBetweenArray);
                 });
+            });
+
+            // This is long clicking to add personal markers with messages.
+            map.addEventListener(plugin.google.maps.event.MAP_LONG_CLICK, function mapClicked(latLng) {
+
+                // Prompt the user to enter something about this location for the marker.
+                var locationDescription = prompt("Please enter information about this location.", "");
+                // Check to make sure they entered something.
+                if (locationDescription != null || locationDescription != "") {
+                    map.addMarker({
+                    position: latLng,
+                    title: 'Your Location:',
+                    snippet: locationDescription,
+                    animation: plugin.google.maps.Animation.DROP
+                }, function(marker) {
+                    // Open the info window
+                    marker.showInfoWindow();
+
+                    // If the marker's info window is closed then it gets removed.
+                    marker.on(plugin.google.maps.event.INFO_CLICK, function(){
+                        // Remove the marker
+                        marker.remove();
+                    });
+                });
+                }
             });
         });
 
