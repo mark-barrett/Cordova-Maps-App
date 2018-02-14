@@ -19,6 +19,8 @@
 
 var map;
 
+var distanceBetweenArray = [];
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -36,11 +38,61 @@ var app = {
         // Binding an Event Listener to get the devices GPS location
         document.getElementById('getGPSLocation').addEventListener('click', getGPSLocation, false);
 
+        // Binding an Event Listener to caluclate the distance between the two points in the distance between array
+        document.getElementById('getDistance').addEventListener('click', getDistance, false);
+
         var div = document.getElementById("map_canvas1");
 
         map = plugin.google.maps.Map.getMap(div);
 
         map.addEventListener(plugin.google.maps.event.MAP_READY, function onMapInit(map) {
+
+            // Event listener for touching the map to add markers
+            map.addEventListener(plugin.google.maps.event.MAP_LONG_CLICK, function mapClicked(latLng) {
+                
+                var markersIndex = 0;
+
+                // Add a marker to the screen at that location
+                map.addMarker({
+                    position: latLng,
+                    title: 'Marker Location:',
+                    snippet: "Lat:"+latLng.lat+" Long:"+latLng.lng,
+                    animation: plugin.google.maps.Animation.DROP
+                }, function(marker) {
+                    // Open the info window
+                    marker.showInfoWindow();
+
+                    // We want to do stuff if the marker is clicked. If it is clicked then we add it's location
+                    // to the global distance array. If there are no elements add it. If there is one element add it.
+                    // If there are two elements clear it and add it to the first.
+                    if(distanceBetweenArray.length == 2 || distanceBetweenArray.length == 0) {
+                        distanceBetweenArray = [latLng];
+                        // Stores the markers index in the distance between array to remove later
+                        markersIndex = 0;
+                    } else if(distanceBetweenArray.length == 1) {
+                        distanceBetweenArray.push(latLng);
+                        // Stores the markers index in the distance between array to remove later
+                        markersIndex = 1;
+                    }
+
+                    // If the marker's info window is closed then it gets removed.
+                    marker.on(plugin.google.maps.event.INFO_CLICK, function(){
+
+                        // Remove an entry like that from the distance between array so
+                        // another marker can takes its place.
+
+                        // Remove the co-ordinates from that array.
+                        distanceBetweenArray.splice(markersIndex, 1);
+
+                        alert(distanceBetweenArray);
+                        // Remove the marker
+                        marker.remove();
+                    });
+
+                    console.log(distanceBetweenArray);
+                    alert(distanceBetweenArray);
+                });
+            });
         });
 
         this.receivedEvent('deviceready');
@@ -107,7 +159,7 @@ function getGPSLocation(event) {
     map.getMyLocation(function onSuccess(location) {
         map.addMarker({
             'position': {"lat": location.latLng.lat, "lng": location.latLng.lng},
-            'title': 'Your location',
+            'title': 'Your Device GPS Location',
             'snippet': "Lat:"+location.latLng.lat+" Long:"+location.latLng.lng
         }, function(marker) {
             marker.showInfoWindow();
@@ -126,6 +178,23 @@ function getGPSLocation(event) {
     }, function onError() {
         alert('Cannot get devices location.');
     });
+}
+
+// Function for getting the distance between two markers
+function getDistance(event) {
+    // First check that there are two entries in the distance between array.
+    // If not, tell the user to enter them.
+    if(distanceBetweenArray.length != 2) {
+        alert('You must have 2 markers on the map.');
+    } else {
+        // Let's calculate the distance.
+        var distance = plugin.google.maps.geometry.spherical.computeDistanceBetween(distanceBetweenArray[0], distanceBetweenArray[1])
+
+        var distance_div = document.getElementById('distance_div');
+        distance_div.innerHTML = '<div class="card"><div class="card-body">'+
+        'Distance: '+distance+' meters'+
+        '</div></div>'
+    }
 }
 
 // HTTP Client functions for contacting the API
