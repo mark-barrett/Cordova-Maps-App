@@ -33,14 +33,14 @@ var app = {
         // Binding an Event Listener to the address form submission
         document.getElementById('searchAddress').addEventListener('click', searchAddress, false);
 
-        alert('we in on device ready');
+        // Binding an Event Listener to get the devices GPS location
+        document.getElementById('getGPSLocation').addEventListener('click', getGPSLocation, false);
 
         var div = document.getElementById("map_canvas1");
 
         map = plugin.google.maps.Map.getMap(div);
 
         map.addEventListener(plugin.google.maps.event.MAP_READY, function onMapInit(map) {
-          alert('hello world');
         });
 
         this.receivedEvent('deviceready');
@@ -98,6 +98,33 @@ function searchAddress(event) {
         }, function() {
           console.log("Camera position changed.");
         });
+    });
+}
+
+// Function for getting the device's GPS location
+function getGPSLocation(event) {
+    map.clear();
+    map.getMyLocation(function onSuccess(location) {
+        map.addMarker({
+            'position': {"lat": location.latLng.lat, "lng": location.latLng.lng},
+            'title': 'Your Device GPS Location',
+            'snippet': "Lat:"+location.latLng.lat+" Long:"+location.latLng.lng
+        }, function(marker) {
+            marker.showInfoWindow();
+
+            var LOCATION = {"lat": location.latLng.lat, "lng": location.latLng.lng};
+
+            map.moveCamera({
+              'target': LOCATION,
+              'tilt': 0,
+              'zoom': 18,
+              'bearing': 140
+            }, function() {
+              console.log("Camera position changed.");
+        });
+    });
+    }, function onError() {
+        alert('Cannot get devices location.');
     });
 }
 
