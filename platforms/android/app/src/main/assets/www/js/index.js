@@ -222,7 +222,7 @@ function getDistance(event) {
             'color': '#1EB4FA',
             'width': 10,
             'geodesic': true
-        });
+        })
     }
 }
 
