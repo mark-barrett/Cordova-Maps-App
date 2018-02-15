@@ -41,6 +41,9 @@ var app = {
         // Binding an Event Listener to caluclate the distance between the two points in the distance between array
         document.getElementById('getDistance').addEventListener('click', getDistance, false);
 
+        // Binding an Event for getting directions between two points
+        document.getElementById('getDirections').addEventListener('click', getDirections, false);
+
         var div = document.getElementById("map_canvas1");
 
         map = plugin.google.maps.Map.getMap(div);
@@ -222,6 +225,42 @@ function getDistance(event) {
             'width': 10,
             'geodesic': true
         })
+    }
+}
+
+// Function for getting directions between two markers.
+function getDirections(event) {
+    // First check that there are two entries in the distance between array.
+    // If not, tell the user to enter them.
+    if(distanceBetweenArray.length != 2) {
+        alert('You must have 2 markers on the map.');
+    } else {
+        // Now lets get the contents of both:
+        var origin = distanceBetweenArray[0].lat+","+distanceBetweenArray[0].lng;
+        var destination = distanceBetweenArray[1].lat+","+distanceBetweenArray[1].lng;
+
+        // Now let us make a request to the Google Maps Directions API.
+        var response = JSON.parse(Http.get('https://maps.googleapis.com/maps/api/directions/json?origin='+origin+'&destination='+destination+'&key=AIzaSyCVYauFMf2WENMc2WRYxRpco4luGzmfmII'));
+        
+        // Now that we have a response we have to make sense of it.
+        var distance = response.routes[0].legs[0].distance.text;
+        var duration = response.routes[0].legs[0].duration.text;
+        var end_address = response.routes[0].legs[0].end_address;
+        var end_location = response.routes[0].legs[0].end_location;
+        var start_address = response.routes[0].legs[0].start_address;
+        var start_location = response.routes[0].legs[0].start_location;
+
+        var directions_div = document.getElementById('directions_div');
+
+        directions_div.innerHTML = ' ';
+
+        // Now loop through the steps and get the directions
+        for(var i=0; i<response.routes[0].legs[0].steps.length; i++) {
+            directions_div.innerHTML += '<div class="card"><div class="card-body">'+
+            response.routes[0].legs[0].steps[i].html_instructions+' for '+response.routes[0].legs[0].steps[i].distance.text+
+            '<br/>Duration: '+response.routes[0].legs[0].steps[i].duration.text+' By: '+response.routes[0].legs[0].steps[i].travel_mode+
+            '</div></div><br/>'
+        }
     }
 }
 

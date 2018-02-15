@@ -33,3 +33,14 @@ Ask:
 Do you want us to open up the camera and take a picture of the location or take one from the gallery for adding images.
 
 The releases on GitHub
+
+
+Demo Directions:
+Amsterdam:
+52.370216,4.895168
+
+Berlin:
+52.520007, 13.404954
+
+
+https://maps.googleapis.com/maps/api/directions/json?origin=52.370216,4.895168&destination=52.520007,%2013.404954&key=AIzaSyCVYauFMf2WENMc2WRYxRpco4luGzmfmII
