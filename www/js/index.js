@@ -84,7 +84,6 @@ var app = {
                         // Remove the co-ordinates from that array.
                         distanceBetweenArray.splice(markersIndex, 1);
 
-                        alert(distanceBetweenArray);
                         // Remove the marker
                         marker.remove();
                     });
