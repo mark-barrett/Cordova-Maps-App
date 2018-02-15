@@ -8,8 +8,8 @@
 | There is functionality for the user to be able to get the distance between two markers on the map.                                                                                                                             | 2     | 10                   | Complete   |
 | There is functionality for the user to be able to get directions and distance between two markers on the map how to navigate from point A to point B (ie navigation instructions).                                             | 3     | 10                   | Complete |
 | There is functionality for the user to be able to put some basic information into a database based on the location he or she has specified earlier. This information may be for example "a hole on the road at this location". | 4     | 10 This is a Grade 5 | Incomplete |
-| There is a functionality for user to be abto images to database based on the address or Latitude / longitude location he or she has specified.                                                                                 | 5     | 10                   | Incomplete |
-| The users can get the information what other users have put on the database and see the information users have put in to the database as markers on the map.                                                                   | 6     | 20                   | Incomplete |
+| There is a functionality for user to be abto images to database based on the address or Latitude / longitude location he or she has specified.                                                                                 | 5     | 10                   | Complete |
+| The users can get the information what other users have put on the database and see the information users have put in to the database as markers on the map.                                                                   | 6     | 20                   | Complete |
 
 **Total Points: 20 (Small Exercise) + 40 (Above)**
 
@@ -29,20 +29,3 @@ This is a Cordova Mobile Application that implements a number of requirements th
 8. Add images about a location. (10p)
 --
 9. Views others information from the database (20p)
-
-
-Ask:
-Do you want us to open up the camera and take a picture of the location or take one from the gallery for adding images.
-
-The releases on GitHub
-
-
-Demo Directions:
-Amsterdam:
-52.370216,4.895168
-
-Berlin:
-52.520007, 13.404954
-
-
-https://maps.googleapis.com/maps/api/directions/json?origin=52.370216,4.895168&destination=52.520007,%2013.404954&key=AIzaSyCVYauFMf2WENMc2WRYxRpco4luGzmfmII
