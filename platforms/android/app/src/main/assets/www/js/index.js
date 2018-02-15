@@ -50,6 +50,40 @@ var app = {
 
         map.addEventListener(plugin.google.maps.event.MAP_READY, function onMapInit(map) {
 
+            // Populate the map with the markers from the database
+            downloadUrl('http://markbarrettdesign.com/cordova-maps/getMarkers.php', function(data) {
+                var xml = data.responseXML;
+                var markers = xml.documentElement.getElementsByTagName('marker');
+                Array.prototype.forEach.call(markers, function(markerElem) {
+                    var id = markerElem.getAttribute('id');
+                    var name = markerElem.getAttribute('name');
+                    var address = markerElem.getAttribute('address');
+                    var type = markerElem.getAttribute('type');
+                    var point = plugin.google.maps.LatLng(
+                        parseFloat(markerElem.getAttribute('lat')),
+                        parseFloat(markerElem.getAttribute('lng'))
+                    );
+
+                    var infowincontent = document.createElement('div');
+                    var strong = document.createElement('strong');
+                    strong.textContent = name
+                    infowincontent.appendChild(strong);
+                    infowincontent.appendChild(document.createElement('br'));
+
+                    var text = document.createElement('text');
+                    text.textContent = address
+                    infowincontent.appendChild(text);
+
+                    alert(markerElem.getAttribute('lat'));
+
+                    map.addMarker({
+                        position: {"lat": markerElem.getAttribute('lat'), "lng": parseFloat(markerElem.getAttribute('lng'))},
+                        title: markerElem.getAttribute('name'),
+                        snippet: markerElem.getAttribute('address')
+                    });
+                });
+            });
+
             // Event listener for touching the map to add markers for distance between
             map.addEventListener(plugin.google.maps.event.MAP_CLICK, function mapClicked(latLng) {
                 
@@ -262,6 +296,22 @@ function getDirections(event) {
             '</div></div><br/>'
         }
     }
+}
+
+// Function used to download the XML contents from the database
+function downloadUrl(url,callback) {
+    var request = window.ActiveXObject ?
+        new ActiveXObject('Microsoft.XMLHTTP') :
+        new XMLHttpRequest;
+
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            callback(request, request.status);
+        }
+    };
+
+    request.open('GET', url, true);
+    request.send(null);
 }
 
 // HTTP Client functions for contacting the API
