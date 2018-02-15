@@ -74,12 +74,10 @@ var app = {
                     text.textContent = address
                     infowincontent.appendChild(text);
 
-                    alert(markerElem.getAttribute('lat'));
-
                     map.addMarker({
                         position: {"lat": markerElem.getAttribute('lat'), "lng": parseFloat(markerElem.getAttribute('lng'))},
                         title: markerElem.getAttribute('name'),
-                        snippet: markerElem.getAttribute('address')
+                        snippet: 'Lat: '+markerElem.getAttribute('lat')+' Long: '+markerElem.getAttribute('lng')
                     });
                 });
             });
@@ -134,6 +132,7 @@ var app = {
                 var locationDescription = prompt("Please enter information about this location.", "");
                 // Check to make sure they entered something.
                 if (locationDescription != null || locationDescription != "") {
+
                     map.addMarker({
                     position: latLng,
                     title: 'Your Location:',
@@ -142,6 +141,11 @@ var app = {
                 }, function(marker) {
                     // Open the info window
                     marker.showInfoWindow();
+
+                    // Get the address by using Google Maps API.
+
+                    // Add it to the database
+                    var response = JSON.parse(Http.get('http://markbarrettdesign.com/cordova-maps/addMarker.php?name='+locationDescription+'&address=Ylioppilaantie&lat='+latLng.lat+'&lng='+latLng.lng+'&type=user_marker'));
 
                     // If the marker's info window is closed then it gets removed.
                     marker.on(plugin.google.maps.event.INFO_CLICK, function(){
