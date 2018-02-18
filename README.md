@@ -11,7 +11,7 @@
 | There is a functionality for user to be abto images to database based on the address or Latitude / longitude location he or she has specified.                                                                                 | 5     | 10                   | Incomplete |
 | The users can get the information what other users have put on the database and see the information users have put in to the database as markers on the map.                                                                   | 6     | 20                   | Complete |
 
-**Total Points: 20 (Small Exercise) + 40 (Above)**
+**Total Points: 20 (Small Exercise) + 70 (Above) = 90**
 
 This is a Cordova Mobile Application that implements a number of requirements that are specified in the README.
 
