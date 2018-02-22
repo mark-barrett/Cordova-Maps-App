@@ -15,17 +15,18 @@
 
 This is a Cordova Mobile Application that implements a number of requirements that are specified in the README.
 
----
-1. Allow the user to enter an address and the app returns a latitude and longitude of the address. (5p) Complete
-2. This address/longitude and latitude is then placed on a map shown to the user. (5p) Complete
---
-3. Location information of the phone shows the longitude and latitude. (5p) Complete
-4. This is then used to place a marker on a map to show the user. (5p) Complete
---
-5. Get the distance between two points. (10p) Complete
-6. Get directions between two markers. (10p)
---
-7. User can put a marker in a location and information about that location. (10p)  --> Here is a grade 5
-8. Add images about a location. (10p)
---
-9. Views others information from the database (20p)
+- You can add your address to the top search bar and it will find that location on the map and put a marker there. It will also put the longitude and latitude of the address too.
+
+- You can pick a marker on the map by selecting where you want it. A marker will be put there. Then by clicking "Get Distance Between Points" will calculate the distance between the points and put a line on the map beween those two points.
+
+- To delete a marker click it and then click the info window and it will dissapear.
+
+- To get directions you must use the same idea as above, select two points and lick "Get Directions Between Points" and it will display the directions between those points below the buttons if they can be found.
+
+- You can get the devices GPS location which will zoom the camera to that marker and then display the longitude and latitude for that position. This can then be used to get directions to or the distance between it and another point.
+
+- The database is also implemented. The database is a basic SQL database that is hosted on my own domain and is edited using PHPMyAdmin. There is two PHP scripts found in the "database" folder in the project folder. These are used to get all the co-ordinates for the maps markers and also for adding a new marker to the database.
+
+- When the user opens the app, the markers from the database are placed on the map. These markers can be added to by the user. Every user that has the app will see the markers that other users have added on the database.
+
+- The user can add a new marker which will be added to the database by click and holding the map at a particular location. The user is then prompted to enter a description of the marker. This is then saved to the database.
